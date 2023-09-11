@@ -1,0 +1,24 @@
+﻿@page
+@model PrøveEksamen.Pages.KontoModel
+@{
+}
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Konto.Ejer" class="control-label"></label>
+                <input asp-for="Konto.Ejer" class="form-control" />
+                <span asp-validation-for="Konto.Ejer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Konto.Beloeb" class="control-label"></label>
+                <input asp-for="Konto.Beloeb" class="form-control" />
+                <span asp-validation-for="Konto.Beloeb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
